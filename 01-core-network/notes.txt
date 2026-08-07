@@ -1,0 +1,16 @@
+Lab: Core Azure Network
+
+Implemented:
+- Azure VNet
+- Web and Database subnets
+- Application Security Groups
+- NSG segmentation
+- Private DNS Zone
+- VNet DNS link
+- Automaticaly A record
+
+Key learning:
+NSG controls whether traffic is allowed.
+ASG provides logical grouping for workloads.
+Private DNS provides internal name resolution.
+Subnets provide logical network segmentation.

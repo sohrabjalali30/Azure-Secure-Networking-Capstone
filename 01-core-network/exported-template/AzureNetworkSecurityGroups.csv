@@ -1,0 +1,2 @@
+﻿NAME,RESOURCE GROUP,LOCATION,SUBSCRIPTION,FLOW LOG,RESOURCE LINK
+"NSG","99-f1d3bfe4-create-and-configure-vnet-peering-in-a","East US","P4-Real Hands-On Labs","","https://portal.azure.com#resource/subscriptions/0cfe2870-d256-4119-b0a3-16293ac11bdc/resourceGroups/99-f1d3bfe4-create-and-configure-vnet-peering-in-a/providers/Microsoft.Network/networkSecurityGroups/NSG"
