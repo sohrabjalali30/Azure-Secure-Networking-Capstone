@@ -1,0 +1,33 @@
+Lab 04 - Secure Azure PaaS Connectivity
+
+Objective:
+Compare Azure Service Endpoints and Private Endpoints for secure access to Azure Storage.
+
+Implemented:
+- Azure VNet with separate client and private endpoint subnets
+- Microsoft.Storage Service Endpoint
+- Storage firewall restriction to selected subnet
+- Azure Storage Private Endpoint
+- Blob subresource private connectivity
+- Private Endpoint NIC and private IP
+- Azure Private DNS integration
+- privatelink.blob.core.windows.net DNS zone
+- VNet DNS link
+- Public network access disabled on private Storage Account
+
+Key learning:
+Service Endpoint keeps the Azure service on its public endpoint but allows access based on trusted subnet identity.
+
+Private Endpoint creates a private IP and NIC inside the VNet through Azure Private Link.
+
+Private DNS resolves the normal Azure Storage hostname to the Private Endpoint IP from inside the VNet.
+
+Skills demonstrated:
+Azure Virtual Network
+Azure Storage Networking
+Service Endpoint
+Private Endpoint
+Private Link
+Private DNS
+Storage Firewall
+PaaS Network Security

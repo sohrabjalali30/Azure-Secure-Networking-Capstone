@@ -1,0 +1,33 @@
+Lab 03 - Azure Public Load Balancer
+
+Objective:
+Deploy a highly available web tier behind an Azure Standard Public Load Balancer.
+
+Implemented:
+- Azure VNet and web subnet
+- Two Ubuntu web servers running Nginx
+- Network Security Group allowing HTTP traffic
+- Standard Public Load Balancer
+- Public frontend IP
+- Backend pool with two web servers
+- HTTP health probe
+- TCP/80 load-balancing rule
+- Backend health validation
+- Public frontend connectivity testing
+
+Validation:
+Both backend web servers were monitored by the HTTP health probe.
+The public frontend IP successfully served web traffic through the Azure Load Balancer.
+
+Skills demonstrated:
+Azure Load Balancer
+High Availability
+Backend Pools
+Health Probes
+Load-balancing Rules
+NSG
+Nginx
+Azure Networking Troubleshooting
+
+Lab note:
+Individual VM public IPs were used only when required by the sandbox for package installation/bootstrap. In a production design, backend VMs would remain private and outbound connectivity would be provided through an explicit method such as Azure NAT Gateway.
