@@ -1,0 +1,37 @@
+Lab 02 - VNet Peering and User-Defined Routing
+
+Objective:
+Implement a hub-and-spoke Azure network and control traffic using VNet Peering and a User Defined Route.
+
+Implemented:
+- Hub VNet: 10.20.0.0/16
+- Spoke VNet: 10.30.0.0/16
+- Bidirectional VNet Peering
+- Linux VM used as a simulated Network Virtual Appliance
+- IP forwarding enabled on the NVA NIC
+- Route table associated with the spoke subnet
+- Default route 0.0.0.0/0 directed to the virtual appliance
+- Effective Routes validation
+- Network Watcher Next Hop validation
+
+Validation:
+Before applying the UDR, traffic to an Internet destination used the Azure system route with Internet as the next hop.
+
+After applying the UDR, Network Watcher showed the virtual appliance as the next hop for Internet-bound traffic.
+
+The peered Hub address space continued to use the more specific Virtual Network Peering route because of longest-prefix matching.
+
+Lab limitation:
+The NVA was used to demonstrate Azure routing behavior. Full guest-OS packet forwarding and NAT were outside the scope of the Pluralsight sandbox lab.
+
+Skills demonstrated:
+Azure Virtual Network
+VNet Peering
+Hub-and-Spoke Networking
+User Defined Routes
+Network Virtual Appliance concepts
+Effective Routes
+Network Watcher
+Next Hop
+Longest Prefix Match
+Azure routing troubleshooting
