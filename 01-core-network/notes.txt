@@ -7,7 +7,7 @@ Implemented:
 - NSG segmentation
 - Private DNS Zone
 - VNet DNS link
-- Automaticaly A record
+- Automatic DNS A record registration
 
 Key learning:
 NSG controls whether traffic is allowed.
